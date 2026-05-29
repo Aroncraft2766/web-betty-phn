@@ -1,4 +1,4 @@
-// ================================================================
+﻿// ================================================================
 //  CONTENIDO.JS — EDITA SOLO ESTE ARCHIVO PARA CAMBIAR TEXTOS
 //  Cada línea tiene una etiqueta que dice qué parte de la página
 //  corresponde. Cambia el texto entre comillas "".
@@ -75,7 +75,7 @@ const TEXTO = {
   // ── SECCIÓN 6 ────────────────────────────────────────────────
   prod6_etiqueta:    "",
   prod6_nombre:      "Mi mayor fortaleza",
-  prod6_descripcion: "Soy una persona segura, confiable y honesta. Brindo la atención que mereces y te ayudo a ganar seguridad y confianza.\n\nMi mayor fortaleza es mi gran corazón. Muchos llegan a mí porque les han dicho: \"Ve con Ivette, es maravillosa y brinda excelente atención\".",
+  prod6_descripcion: "Soy una persona segura, confiable y honesta. Brindo la atención que mereces y te ayudo a ganar seguridad y confianza.\n\nMi mayor fortaleza es mi gran corazón. Muchos llegan a mí porque les han dicho: \"Ve con Betty, es maravillosa y brinda excelente atención\".",
 
   // ── SECCIÓN 7 ────────────────────────────────────────────────
   prod7_etiqueta:    "",
@@ -172,7 +172,7 @@ const TEXTO = {
 
 
   // ── CARRITO — número de WhatsApp para enviar el pedido ───────
-  carrito_whatsapp: "525536194099",
+  carrito_whatsapp: "5212241033782",
 
 };
 

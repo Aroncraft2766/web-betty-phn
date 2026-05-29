@@ -48,7 +48,7 @@ window.EXP_CONTENT = {
   ],
 
   // ── WHATSAPP ──────────────────────────────────────────────────────────────
-  whatsappNumber: "525536194099",
+  whatsappNumber: "5212241033782",
 
   // ── BOTÓN COMPRAR ─────────────────────────────────────────────────────────
   buyButtonText: "Comprar por WhatsApp",

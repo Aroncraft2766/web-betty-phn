@@ -7,14 +7,14 @@ window.SITE_CONTENT = {
 
   // ─── META ────────────────────────────────────────────────────────────────
   meta: {
-    title: "Ale-Natura",
-    description: "Experiencias de nutrición natural PHN. Transforma tu salud y bienestar de forma natural con la Nutrióloga Ale.",
-    faviconUrl: "public/images/logos/Logo PHN.webp",
+    title: "Betty González PHN",
+    description: "Experiencias de nutrición natural PHN. Transforma tu salud y bienestar de forma natural con la Betty González.",
+    faviconUrl: "public/images/logos/Logo PHN.png",
   },
 
   // ─── NAVBAR ──────────────────────────────────────────────────────────────
   navbar: {
-    logoUrl:   "public/images/logos/Logo PHN.webp",
+    logoUrl:   "public/images/logos/Logo PHN.png",
     logoLink:  "",
     links: [
       { text: "Inicio",        href: "index.html" },
@@ -22,7 +22,6 @@ window.SITE_CONTENT = {
       { text: "Productos",     href: "catalogo.html" },
       { text: "Preguntas",     href: "#section-faq" },
       { text: "Contacto",      href: "#section-contacto" },
-      { text: "Conoce más de mí", href: "sobre-mi.html" },
     ],
     loginText: "Habla con Meredit IA",
     loginHref: "#",
@@ -34,9 +33,9 @@ window.SITE_CONTENT = {
     titleLine2: "de PHN",
     subtitle:   "Tu transformación natural comienza aquí",
     ctaText:    "Comprar",
-    ctaLink:    "https://wa.me/525536194099?text=Quiero%20más%20información%20sobre%20las%20experiencias%20PHN",
+    ctaLink:    "https://wa.me/5212241033782?text=Quiero%20más%20información%20sobre%20las%20experiencias%20PHN",
     mediaType:  "image",                      // "image" | "video"
-    imageUrl:   "public/images/imagen2.png",  // usado cuando mediaType === "image"
+    imageUrl:   "public/images/imagen2.webp",  // usado cuando mediaType === "image"
     videoUrl:   "https://res.cloudinary.com/dfi2ugopz/video/upload/v1777496776/VID-20260429-WA0012_zo9mlk.mp4", // usado cuando mediaType === "video"
   },
 
@@ -50,7 +49,7 @@ window.SITE_CONTENT = {
         author: "Ana Maria",
       },
       {
-        text:   "Me quedó muy a gusto con el reto como siempre y agradecida contigo Annie por la oportunidad que nos das y la motivación de mejorar en lo personal, mi estado de salud y autoestima.",
+        text:   "Me quedó muy a gusto con el reto como siempre y agradecida contigo Betty por la oportunidad que nos das y la motivación de mejorar en lo personal, mi estado de salud y autoestima.",
         author: "Montserrat Flores",
       },
       {
@@ -70,7 +69,7 @@ window.SITE_CONTENT = {
         author: "Daniela Navarro",
       },
       {
-        text:   "La vdd me encantan los retos de Annie, las comidas siempre son muy ricas y variadas es lo mejor sentir q no estás a dieta y siempre feliz con los resultados",
+        text:   "La vdd me encantan los retos de Betty, las comidas siempre son muy ricas y variadas es lo mejor sentir q no estás a dieta y siempre feliz con los resultados",
         author: "Sonia Saldivar",
       },
       {
@@ -142,7 +141,7 @@ window.SITE_CONTENT = {
       },
       {
         title:       "EXPERIENCIA BAJA DE EDAD CORPORAL — REGENERACIÓN CELULAR TOTAL",
-        imageUrl:    "public/images/producto-1_1.webp",
+        imageUrl:    "public/images/experiencias/Experiencia 4/imagen.webp",
         ctaText:     "Comprar",
         ctaLink:     "experiencias/Experiencia 4/compra.html",
         description: "Con esta experiencia bajas tu edad corporal pero lo que realmente cambia es cómo empiezas a sentirte: con más energía, más recuperación, más vitalidad. Tus células se renuevan, tu piel se ve más fresca, tu circulación mejora desde adentro… y las personas a tu alrededor empiezan a preguntarte qué estás haciendo diferente.\n\nYo también lo viví: bajé mi edad corporal a 25 años con estudios que lo comprueban. No fue magia… fue entender que el cuerpo tiene la capacidad de regenerarse cuando se le da lo que necesita.\n\nEsto no es un antioxidante genérico. Es una experiencia donde dos suplementos de acción profunda trabajan juntos para revertir el envejecimiento celular. El RGC16 —con Noni, Moringa, Acai, Betabel, Goji y 11 frutas más— estimula la regeneración celular, potencia el sistema linfático para eliminar toxinas acumuladas y actúa como antioxidante de espectro amplio que neutraliza los radicales libres responsables del envejecimiento. El D7 CAPS —con Cúrcuma, Chlorella, Acai y Moringa— regula el colesterol y los triglicéridos, mejora la circulación sanguínea y depura el sistema linfático, porque el cuerpo no puede rejuvenecer si la sangre no fluye limpia y los nutrientes no llegan donde deben. La oxidación celular disminuye, la inflamación sistémica baja, la energía regresa… y sin forzarlo, tu cuerpo empieza a recuperar los años que el estrés y el tiempo le quitaron.",
@@ -277,10 +276,10 @@ window.SITE_CONTENT = {
       {
         title:       "Jugos, Tés e Infusiones Vol. 1",
         imageUrl:    "public/libros/jugos-v1/portada.webp",
-        description: "Descubre los jugos, tés e infusiones naturales que la Nutrióloga Ale utiliza en sus experiencias para desinflamar, depurar y activar tu metabolismo.",
+        description: "Descubre los jugos, tés e infusiones naturales que la Betty González utiliza en sus experiencias para desinflamar, depurar y activar tu metabolismo.",
         viewerUrl:   "visor-imagenes.html?catalog=jugos&title=Jugos%2C%20T%C3%A9s%20e%20Infusiones%20Vol.%201",
         price:       "$99",
-        buyUrl:      "https://wa.me/525536194099?text=Hola%20Ivette%2C%20quiero%20comprar%20el%20libro%20Jugos%2C%20T%C3%A9s%20e%20Infusiones%20Vol.%201%20%28%2499%29",
+        buyUrl:      "https://wa.me/5212241033782?text=Hola%20Betty%2C%20quiero%20comprar%20el%20libro%20Jugos%2C%20T%C3%A9s%20e%20Infusiones%20Vol.%201%20%28%2499%29",
         ctaText:     "Comprar — $99",
       },
       {
@@ -289,7 +288,7 @@ window.SITE_CONTENT = {
         description: "50 recetas vegetarianas deliciosas y nutritivas diseñadas para que comas saludable sin sacrificar el gusto. Tu aliado en cada experiencia PHN.",
         viewerUrl:   "visor-imagenes.html?catalog=recetas&title=Recetario%20FIT%20%E2%80%94%20Recetas%20Saludables",
         price:       "$99",
-        buyUrl:      "https://wa.me/525536194099?text=Hola%20Ivette%2C%20quiero%20comprar%20el%20Recetario%20FIT%20%E2%80%94%20Recetas%20Saludables%20%28%2499%29",
+        buyUrl:      "https://wa.me/5212241033782?text=Hola%20Betty%2C%20quiero%20comprar%20el%20Recetario%20FIT%20%E2%80%94%20Recetas%20Saludables%20%28%2499%29",
         ctaText:     "Comprar — $99",
       },
       {
@@ -314,7 +313,7 @@ window.SITE_CONTENT = {
     heading:    "Contáctanos",
     subheading: "¿Tienes dudas sobre alguna experiencia? Escríbenos y te respondemos a la brevedad.",
     formspreeId: "XXXXXXXX",   // ← reemplaza con tu ID de Formspree (formspree.io)
-    whatsapp:  "525536194099",
+    whatsapp:  "5212241033782",
     email:     "prohernatura.contacto@gmail.com",
   },
 
@@ -329,7 +328,7 @@ window.SITE_CONTENT = {
       },
       {
         q: "¿Cómo sé qué producto necesito?",
-        a: "Cada producto PHN está diseñado para un objetivo específico: digestión, articulaciones, sistema nervioso, circulación, hígado, riñones, sistema inmune y más. Escríbenos por WhatsApp al 5536194099 y te asesoramos según tus necesidades, o pregúntale a Meredith en el chat.",
+        a: "Cada producto PHN está diseñado para un objetivo específico: digestión, articulaciones, sistema nervioso, circulación, hígado, riñones, sistema inmune y más. Escríbenos por WhatsApp al 2241033782 y te asesoramos según tus necesidades, o pregúntale a Meredith en el chat.",
       },
       {
         q: "¿Puedo tomar varios productos al mismo tiempo?",
@@ -349,11 +348,11 @@ window.SITE_CONTENT = {
       },
       {
         q: "¿Hacen envíos a todo México?",
-        a: "Sí, realizamos envíos a toda la república. También puedes recoger directamente en nuestra ubicación en Tlalpan, Ciudad de México. Escríbenos por WhatsApp al 5536194099 para coordinar tu envío o visita.",
+        a: "Sí, realizamos envíos a toda la república. También puedes recoger directamente en nuestra ubicación en Tlalpan, Ciudad de México. Escríbenos por WhatsApp al 2241033782 para coordinar tu envío o visita.",
       },
       {
         q: "¿Cómo hago mi pedido?",
-        a: "Escríbele a Ivette directamente por WhatsApp al 5536194099. Ella te asesora, te ayuda a elegir los productos ideales para ti y coordina el envío o entrega. La atención es personalizada y directa.",
+        a: "Escríbele a Betty González directamente por WhatsApp al 2241033782. Ella te asesora, te ayuda a elegir los productos ideales para ti y coordina el envío o entrega. La atención es personalizada y directa.",
       },
       {
         q: "¿PHN también tiene productos cosméticos?",
@@ -361,7 +360,7 @@ window.SITE_CONTENT = {
       },
       {
         q: "¿Qué incluyen las experiencias PHN?",
-        a: "Cada experiencia incluye los suplementos específicos, plan de alimentación, recetario de jugos y tés terapéuticos, guía de ingesta en los tiempos exactos según las leyes naturales del cuerpo, lista de alimentos alcalinos y acompañamiento con la Nutrióloga Ale.",
+        a: "Cada experiencia incluye los suplementos específicos, plan de alimentación, recetario de jugos y tés terapéuticos, guía de ingesta en los tiempos exactos según las leyes naturales del cuerpo, lista de alimentos alcalinos y acompañamiento con la Betty González.",
       },
     ],
   },
@@ -387,20 +386,19 @@ window.SITE_CONTENT = {
     address: {
       heading: "DIRECCIÓN",
       lines: [
-        "Prol. Canal de Miramontes 131, Coapa,",
-        "Ex de San Juan de Dios, Tlalpan, 14387",
-        "Ciudad de México, CDMX",
+        "Blvd. Cuauhtémoc 1602, La Villa,",
+        "75483 Tecamachalco, Pue.",
       ],
     },
-    whatsappFloat: "525536194099",
+    whatsappFloat: "5212241033782",
     termsUrl:  "#",
     termsText: "Términos y Condiciones",
     credits:   "Todos los derechos reservados",
     social: [
-      { name: "Facebook",   url: "https://www.facebook.com/centrodedistribucionautorizad", color: "#1877f2", icon: "fb"  },
-      { name: "Instagram",  url: "https://www.instagram.com/phntlahuacxochimilco?igsh=YzM3dHljbm8ycG4x&utm_source=qr", color: "#e1306c", icon: "ig"  },
-      { name: "WhatsApp",   url: "https://wa.me/525536194099", color: "#25d366", icon: "wa" },
-      { name: "TikTok",     url: "https://www.tiktok.com/@ivettecastelans?_r=1&_t=ZS-95yfOeDuBcH", color: "#010101", icon: "tt"  },
+      { name: "Facebook",   url: "https://www.facebook.com/share/1Dq4X1YqxC/", color: "#1877f2", icon: "fb"  },
+      { name: "Instagram",  url: "https://www.instagram.com/natbetygonzalez/", color: "#e1306c", icon: "ig"  },
+      { name: "WhatsApp",   url: "https://wa.me/5212241033782", color: "#25d366", icon: "wa" },
+      { name: "TikTok",     url: "https://www.tiktok.com/@bea.proher.natura1?_r=1&_t=ZS-96laW43SGX7", color: "#010101", icon: "tt"  },
     ],
   },
 
@@ -410,8 +408,8 @@ window.SITE_CONTENT = {
 window.SITE_CONTENT_EN = {
 
   meta: {
-    title: "Ale-Natura",
-    description: "PHN natural nutrition experiences. Transform your health and wellbeing naturally with Nutritionist Ale.",
+    title: "Betty González PHN",
+    description: "PHN natural nutrition experiences. Transform your health and wellbeing naturally with Betty González.",
     faviconUrl: "public/images/logos/Logo PHN.webp",
   },
 
@@ -424,7 +422,6 @@ window.SITE_CONTENT_EN = {
       { text: "Products",         href: "catalogo.html" },
       { text: "FAQ",              href: "#section-faq" },
       { text: "Contact",          href: "#section-contacto" },
-      { text: "Know more about me", href: "sobre-mi.html" },
     ],
     loginText: "Talk to Meredit AI",
     loginHref: "#",
@@ -435,7 +432,7 @@ window.SITE_CONTENT_EN = {
     titleLine2: "experience",
     subtitle:   "Your natural transformation starts here",
     ctaText:    "Buy",
-    ctaLink:    "https://wa.me/525536194099?text=I%20want%20more%20information%20about%20PHN%20experiences",
+    ctaLink:    "https://wa.me/5212241033782?text=I%20want%20more%20information%20about%20PHN%20experiences",
   },
 
   testimonials: {
@@ -447,7 +444,7 @@ window.SITE_CONTENT_EN = {
         author: "Ana Maria",
       },
       {
-        text:   "I was very pleased with the program as always, and grateful to Nutritionist Ale for the opportunity she gives us and the motivation to improve ourselves, our health and self-esteem.",
+        text:   "I was very pleased with the program as always, and grateful to Betty González for the opportunity she gives us and the motivation to improve ourselves, our health and self-esteem.",
         author: "Montserrat Flores",
       },
       {
@@ -467,7 +464,7 @@ window.SITE_CONTENT_EN = {
         author: "Daniela Navarro",
       },
       {
-        text:   "I really love Ale's programs, the meals are always very tasty and varied — the best part is feeling like you are not on a diet and always happy with the results.",
+        text:   "I really love Betty's programs, the meals are always very tasty and varied — the best part is feeling like you are not on a diet and always happy with the results.",
         author: "Sonia Saldivar",
       },
       {
@@ -670,7 +667,7 @@ window.SITE_CONTENT_EN = {
     heading:    "Contact Us",
     subheading: "Have questions about any experience? Write to us and we will get back to you shortly.",
     formspreeId: "XXXXXXXX",
-    whatsapp:  "525536194099",
+    whatsapp:  "5212241033782",
     email:     "prohernatura.contacto@gmail.com",
   },
 
@@ -684,7 +681,7 @@ window.SITE_CONTENT_EN = {
       },
       {
         q: "How do I know which product I need?",
-        a: "Each PHN product is designed for a specific goal: digestion, joints, nervous system, circulation, liver, kidneys, immune system and more. Write to us on WhatsApp at 5536194099 and we'll advise you based on your needs, or ask Meredith in the chat.",
+        a: "Each PHN product is designed for a specific goal: digestion, joints, nervous system, circulation, liver, kidneys, immune system and more. Write to us on WhatsApp at 2241033782 and we'll advise you based on your needs, or ask Meredith in the chat.",
       },
       {
         q: "Can I take multiple products at the same time?",
@@ -704,11 +701,11 @@ window.SITE_CONTENT_EN = {
       },
       {
         q: "Do you ship to all of Mexico?",
-        a: "Yes, we ship nationwide. You can also pick up directly at our location in Tlalpan, Mexico City. Write to us on WhatsApp at 5536194099 to arrange your shipment or visit.",
+        a: "Yes, we ship nationwide. You can also pick up directly at our location in Tlalpan, Mexico City. Write to us on WhatsApp at 2241033782 to arrange your shipment or visit.",
       },
       {
         q: "How do I place an order?",
-        a: "Write to Ivette directly on WhatsApp at 5536194099. She will advise you, help you choose the ideal products and arrange shipping or delivery. The attention is personalized and direct.",
+        a: "Write to Betty González directly on WhatsApp at 2241033782. She will advise you, help you choose the ideal products and arrange shipping or delivery. The attention is personalized and direct.",
       },
       {
         q: "Does PHN also have cosmetic products?",
@@ -716,7 +713,7 @@ window.SITE_CONTENT_EN = {
       },
       {
         q: "What do PHN experiences include?",
-        a: "Each experience includes specific supplements, a meal plan, therapeutic juices and teas recipe book, intake guide at the exact times according to your body's natural laws, alkaline food list and 24/7 accompaniment with Nutritionist Ale.",
+        a: "Each experience includes specific supplements, a meal plan, therapeutic juices and teas recipe book, intake guide at the exact times according to your body's natural laws, alkaline food list and 24/7 accompaniment with Betty González.",
       },
     ],
   },
@@ -743,7 +740,7 @@ window.SITE_CONTENT_EN = {
       {
         title:       "Juices, Teas & Infusions Vol. 1",
         imageUrl:    "public/libros/jugos-v1/portada.webp",
-        description: "Discover the natural juices, teas and infusions Nutritionist Ale uses in her experiences to reduce inflammation, detox and activate your metabolism.",
+        description: "Discover the natural juices, teas and infusions Betty González uses in her experiences to reduce inflammation, detox and activate your metabolism.",
         viewerUrl:   "visor-imagenes.html?catalog=jugos&title=Juices%2C%20Teas%20%26%20Infusions%20Vol.%201",
         ctaText:     "Read book",
       },
@@ -775,20 +772,19 @@ window.SITE_CONTENT_EN = {
     address: {
       heading: "ADDRESS",
       lines: [
-        "Prol. Canal de Miramontes 131, Coapa,",
-        "Ex de San Juan de Dios, Tlalpan, 14387",
-        "Ciudad de México, CDMX",
+        "Blvd. Cuauhtémoc 1602, La Villa,",
+        "75483 Tecamachalco, Pue.",
       ],
     },
-    whatsappFloat: "525536194099",
+    whatsappFloat: "5212241033782",
     termsUrl:  "#",
     termsText: "Terms and Conditions",
     credits:   "All rights reserved",
     social: [
-      { name: "Facebook",   url: "https://www.facebook.com/centrodedistribucionautorizad", color: "#1877f2", icon: "fb"  },
-      { name: "Instagram",  url: "https://www.instagram.com/phntlahuacxochimilco?igsh=YzM3dHljbm8ycG4x&utm_source=qr", color: "#e1306c", icon: "ig"  },
-      { name: "WhatsApp",   url: "https://wa.me/525536194099", color: "#25d366", icon: "wa" },
-      { name: "TikTok",     url: "https://www.tiktok.com/@ivettecastelans?_r=1&_t=ZS-95yfOeDuBcH", color: "#010101", icon: "tt"  },
+      { name: "Facebook",   url: "https://www.facebook.com/share/1Dq4X1YqxC/", color: "#1877f2", icon: "fb"  },
+      { name: "Instagram",  url: "https://www.instagram.com/natbetygonzalez/", color: "#e1306c", icon: "ig"  },
+      { name: "WhatsApp",   url: "https://wa.me/5212241033782", color: "#25d366", icon: "wa" },
+      { name: "TikTok",     url: "https://www.tiktok.com/@bea.proher.natura1?_r=1&_t=ZS-96laW43SGX7", color: "#010101", icon: "tt"  },
     ],
   },
 

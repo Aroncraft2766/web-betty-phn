@@ -1,4 +1,4 @@
-/**
+﻿/**
  * translations.js — Traducciones al inglés de todas las páginas de compra
  * ─────────────────────────────────────────────────────────────────────────
  * Edita los campos de cada experiencia para cambiar el inglés de esa página.
@@ -20,7 +20,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for weight loss, colitis, constipation, inflammation and fluid retention",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -44,7 +44,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "15-day meal plan",
         "Juices, teas & infusions for uric acid, pH balance, osteoarthritis, rheumatoid arthritis, rheumatism, cellular regeneration and antioxidants",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -67,7 +67,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "15-day meal plan",
         "Juices, teas & infusions for cellular oxidation, cellular regeneration, natural collagen, rejuvenation, fluid retention and natural detoxification",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -90,7 +90,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for cellular oxidation, cellular regeneration, energy boosters, natural collagen and rejuvenation",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -113,7 +113,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for fatty liver, gallbladder, slow digestion, hepatic detoxification and pancreatic regeneration",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -137,7 +137,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for cholesterol, triglycerides, liver, cardiovascular health and blood purification",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -161,7 +161,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for ovaries, menstrual cycle, cysts, endometriosis, PMS and hormonal balance",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -185,7 +185,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for lungs, bronchi, sinusitis, asthma, respiratory allergies and immune system",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -209,7 +209,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for gastritis, peptic ulcer, reflux, irritable bowel, gastric mucosa and pH balance",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -233,7 +233,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for constipation, colon, microbiota, abdominal inflammation and intestinal detoxification",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -257,7 +257,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for family energy, nervous system, immunity, vitality and cellular regeneration",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -281,7 +281,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for varicose veins, circulation, arteries, fluid retention, blood pressure and venous health",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",
@@ -305,7 +305,7 @@ window.PHN_TRANSLATIONS = {
       includes: [
         "3-month meal plan",
         "Juices, teas & infusions for nervous system, depression, anxiety, sleep, chronic stress and cellular regeneration",
-        "24/7 support with Nutritionist Ale",
+        "24/7 support with Betty González",
         "Alkaline foods list",
         "Monotropic Diet",
         "Intake guide at the exact times according to your body's natural laws",

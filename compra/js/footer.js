@@ -25,17 +25,16 @@
     termsUrl:  '#',
     termsText: 'Términos y Condiciones',
     credits:   'Todos los derechos reservados',
-    whatsapp:  '525536194099',
+    whatsapp:  '5212241033782',
     address: [
-      'Prol. Canal de Miramontes 131, Coapa,',
-      'Ex de San Juan de Dios, Tlalpan, 14387',
-      'Ciudad de México, CDMX',
+      'Blvd. Cuauhtémoc 1602, La Villa,',
+      '75483 Tecamachalco, Pue.',
     ],
     social: [
-      { name: 'Facebook',   url: 'https://www.facebook.com/centrodedistribucionautorizad',                                              color: '#1877f2', icon: 'fb' },
-      { name: 'Instagram',  url: 'https://www.instagram.com/phntlahuacxochimilco?igsh=YzM3dHljbm8ycG4x&utm_source=qr',                   color: '#e1306c', icon: 'ig' },
-      { name: 'WhatsApp',   url: 'https://wa.me/525536194099',                                                                            color: '#25d366', icon: 'wa' },
-      { name: 'TikTok',     url: 'https://www.tiktok.com/@ivettecastelans?_r=1&_t=ZS-95yfOeDuBcH',                                        color: '#010101', icon: 'tt' },
+      { name: 'Facebook',   url: 'https://www.facebook.com/share/1Dq4X1YqxC/',                                                            color: '#1877f2', icon: 'fb' },
+      { name: 'Instagram',  url: 'https://www.instagram.com/natbetygonzalez/',                                                             color: '#e1306c', icon: 'ig' },
+      { name: 'WhatsApp',   url: 'https://wa.me/5212241033782',                                                                            color: '#25d366', icon: 'wa' },
+      { name: 'TikTok',     url: 'https://www.tiktok.com/@bea.proher.natura1?_r=1&_t=ZS-96laW43SGX7',                                     color: '#010101', icon: 'tt' },
     ],
   };
 

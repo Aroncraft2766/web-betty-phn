@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1" />
-  <title id="page-title">Producto — Ale-Natura</title>
+  <title id="page-title">Producto — Betty González PHN</title>
   <!-- Fuentes (igual que productos.html) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -499,7 +499,7 @@
 <script src="../src/features/productos/data.js"></script>
 <script>
 var _currentId = new URLSearchParams(window.location.search).get('id');
-var WA_NUMBER = '525536194099';
+var WA_NUMBER = '5212241033782';
 
 document.addEventListener('DOMContentLoaded', function(){
   var p = PHN_CATALOG[_currentId];
@@ -508,7 +508,7 @@ document.addEventListener('DOMContentLoaded', function(){
     return;
   }
 
-  document.title = p.nombre + ' — Ale-Natura';
+  document.title = p.nombre + ' — Betty González PHN';
 
   // Ocultar videos de Nanotecnología en productos cosméticos
   var cosmeticos = ['VR-4 GEL','DB-6 CREMA','COLAGENO 80/20','COLAGENO 50/50','MASCARILLA','F.VIT-GEL'];
@@ -614,7 +614,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   // Botón WhatsApp
-  var msg = 'Hola, me gustaría obtener más información sobre el producto *' + p.nombre + '* de Ale-Natura. ¿Podrían ayudarme?';
+  var msg = 'Hola, me gustaría obtener más información sobre el producto *' + p.nombre + '* de Betty González PHN. ¿Podrían ayudarme?';
   document.getElementById('buyBtn').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
 });
 

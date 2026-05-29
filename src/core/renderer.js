@@ -1068,14 +1068,9 @@
     html.dark #section-contacto .con-sub { color: #999; }
 
     .con-layout {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .con-maps-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 32px;
+      gap: 48px;
       align-items: start;
     }
 
@@ -1171,7 +1166,7 @@
       #section-contacto { padding: 48px 16px; }
       #section-contacto .ct-section-inner-wrap { padding: 32px 20px; border-radius: 18px; }
       #section-contacto h2 { font-size: 1.5em; }
-      .con-maps-row { grid-template-columns: 1fr; gap: 24px; }
+      .con-layout { grid-template-columns: 1fr; gap: 32px; }
       .con-map-wrap { height: 220px; }
       .con-form button { width: 100%; text-align: center; align-self: stretch; box-sizing: border-box; }
     }
@@ -1199,49 +1194,24 @@
         </div>
       </div>
 
-      <!-- Mapas lado a lado -->
-      <div class="con-maps-row">
-
-        <!-- Mapa 1: Tlalpan -->
-        <div class="con-map-col">
-          <div class="con-map-wrap">
-            <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-99.1434%2C19.2759%2C-99.1214%2C19.2959&amp;layer=mapnik&amp;marker=19.28593%2C-99.13244"
-              allowfullscreen
-              loading="lazy"
-              title="Ubicación Tlalpan">
-            </iframe>
-          </div>
-          <div class="con-map-info">
-            <h3>Tlalpan, CDMX</h3>
-            <p>Prol. Canal de Miramontes 131, Coapa, Ex de San Juan de Dios, Tlalpan, 14387 Ciudad de México, CDMX</p>
-            <a href="https://maps.app.goo.gl/zxnYXprTPyrLLmP48" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#27ae60;font-size:0.88em;font-weight:600;text-decoration:none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              ${e(c.ui.mapLink)}
-            </a>
-          </div>
+      <!-- Mapa: Tecamachalco -->
+      <div class="con-map-col">
+        <div class="con-map-wrap">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-97.73420%2C18.86811%2C-97.71420%2C18.88811&amp;layer=mapnik&amp;marker=18.87811%2C-97.72420"
+            allowfullscreen
+            loading="lazy"
+            title="Ubicación Tecamachalco">
+          </iframe>
         </div>
-
-        <!-- Mapa 2: Tláhuac -->
-        <div class="con-map-col">
-          <div class="con-map-wrap">
-            <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-99.0169%2C19.2607%2C-98.9949%2C19.2807&amp;layer=mapnik&amp;marker=19.27074%2C-99.00591"
-              allowfullscreen
-              loading="lazy"
-              title="Ubicación Tláhuac">
-            </iframe>
-          </div>
-          <div class="con-map-info">
-            <h3>Tláhuac, CDMX</h3>
-            <p>San Rafael Atlixco 12, La Asunción, Tláhuac, 13000 Ciudad de México, CDMX</p>
-            <a href="https://maps.app.goo.gl/4M3Prnzr3qQVcKYH7" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#27ae60;font-size:0.88em;font-weight:600;text-decoration:none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              ${e(c.ui.mapLink)}
-            </a>
-          </div>
+        <div class="con-map-info">
+          <h3>Tecamachalco, Pue.</h3>
+          <p>Blvd. Cuauhtémoc 1602, La Villa, 75483 Tecamachalco, Pue.</p>
+          <a href="https://maps.app.goo.gl/tAyZhbaHo3TyA5pUA" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#27ae60;font-size:0.88em;font-weight:600;text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ${e(c.ui.mapLink)}
+          </a>
         </div>
-
       </div>
 
     </div>
@@ -1853,7 +1823,7 @@
         var asunto  = (conForm.querySelector('[name="asunto"]')  || {}).value || '';
         var mensaje = (conForm.querySelector('[name="mensaje"]') || {}).value || '';
         var wa      = (window.SITE_CONTENT && window.SITE_CONTENT.contacto && window.SITE_CONTENT.contacto.whatsapp)
-                      || '525536194099';
+                      || '5212241033782';
         var text = encodeURIComponent(
           '¡Hola! 👋 Me contacto desde la página de PHN.\n\n' +
           '👤 Nombre: '  + nombre  + '\n' +
