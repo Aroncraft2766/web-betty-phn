@@ -24,7 +24,7 @@ Cada página de compra tiene su propio `experiencias/Experiencia X/content/conte
 | `CLAUDE.md` | Esta guía | ✅ **Actualizar siempre** que se agregue un archivo, cambie una regla de edición o se introduzca un nuevo patrón |
 | `compra/js/video-content.js` | Textos de los 3 videos en todas las páginas de compra (ES + EN) | ✅ Sí |
 | `compra/js/translations.js` | Traducciones al inglés de todas las páginas de compra (título, descripción, lista) | ✅ Sí |
-| `compra/js/scripts.js` | Lógica compartida: slider móvil, botón traducir, orden del carrito, loop de últimos 3s en cápsulas 2 y 3 | ⚠️ Solo al final del archivo |
+| `compra/js/scripts.js` | Lógica compartida: slider móvil, botón traducir, orden del carrito, loop de últimos 3s en cápsulas 2 y 3, navbar `#phnNav` transparente→gris al hacer scroll | ⚠️ Solo al final del archivo |
 | `compra/js/footer.js` | Footer completo compartido. Se carga con `<script data-root="../../">` en compra.html y `<script data-root="">` en raíz | ✅ Sí — editar datos directamente en el objeto `data` |
 | `catalogo.html` | Landing de catálogo con 2 banners: Productos y Cosméticos | ✅ Sí — editar banners, títulos |
 | `cosmeticos.html` | Página de productos cosméticos (VR-4 GEL, DB-6 CREMA, COLAGENO 80/20, COLAGENO 50/50, MASCARILLA) | ⚠️ Misma estructura que `productos.html` |

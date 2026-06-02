@@ -294,3 +294,56 @@
     document.addEventListener('DOMContentLoaded', init);
   } else { init(); }
 })();
+
+/* ── PHN: navbar transparente al inicio → gris al hacer scroll ───────────────
+   Replica el comportamiento de la navbar de la página inicial (#navbar): el
+   <nav id="phnNav"> de las páginas de compra es fixed y transparente sobre el
+   banner oscuro, y al pasar el banner gana la clase .scrolled (fondo #2b2b2b).
+   Si la página no tiene banner visible, queda gris desde el inicio y se
+   compensa con padding-top para que el contenido no quede oculto. */
+(function(){
+  function injectStyles(){
+    if(document.getElementById('phn-nav-style')) return;
+    var css = ''
+      + '#phnNav{background:transparent!important;box-shadow:none!important;}'
+      + '#phnNav #phnBackLink,#phnNav #phn-cart-link{color:#fff!important;}'
+      + '#phnNav.scrolled{background:#2b2b2b!important;box-shadow:0 2px 12px rgba(0,0,0,.4)!important;}';
+    var s = document.createElement('style');
+    s.id = 'phn-nav-style';
+    s.textContent = css;
+    document.head.appendChild(s);
+  }
+
+  function initPHNNavScroll(){
+    var nav = document.getElementById('phnNav');
+    if(!nav) return;
+    injectStyles();
+    var banner = document.getElementById('heroBanner');
+    var bannerImg = document.getElementById('bannerImg');
+
+    function onScroll(){
+      var visible = banner && banner.offsetHeight > 4 &&
+                    getComputedStyle(banner).display !== 'none';
+      var threshold;
+      if(visible){
+        threshold = banner.offsetTop + banner.offsetHeight - 80;
+        document.body.style.paddingTop = '';
+      } else {
+        /* sin banner: gris fijo desde arriba + hueco para el nav */
+        threshold = -1;
+        document.body.style.paddingTop = nav.offsetHeight + 'px';
+      }
+      nav.classList.toggle('scrolled', window.scrollY > threshold);
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    if(bannerImg) bannerImg.addEventListener('load', onScroll);   /* recalcular al cargar la imagen */
+    window.addEventListener('load', onScroll);
+    onScroll();
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initPHNNavScroll);
+  } else { initPHNNavScroll(); }
+})();
