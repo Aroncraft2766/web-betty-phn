@@ -1,4 +1,4 @@
-﻿/**
+/**
  * footer.js — Footer compartido PHN
  * Uso:
  *   Desde experiencias/Experiencia X/compra.html:
@@ -21,7 +21,7 @@
   };
 
   var data = {
-    logoUrl:   'public/images/logos/Logo PHN.webp',
+    logoUrl:   'public/images/logos/Logo PHN.png',
     termsUrl:  '#',
     termsText: 'Términos y Condiciones',
     credits:   'Todos los derechos reservados',

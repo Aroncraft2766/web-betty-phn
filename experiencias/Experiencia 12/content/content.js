@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CONTENIDO EDITABLE — Experiencia 12: EXPERIENCIA ENERGÍA FAMILIAR VITAL
  * Edita este archivo para cambiar textos, precio, imagen y número de WhatsApp.
  */
@@ -21,7 +21,7 @@ window.EXP_CONTENT = {
     price:    "",           // ej. "$1,500 MXN" — deja vacío para ocultar
     badge:    "3 meses",
 
-    imageUrl:      "../Experiencia 1/content/images/producto.webp",
+    imageUrl:      "../../public/images/experiencias/Experiencia 1/imagen.webp",
     imageFallback: "../../energia familiar.png",
     imageAlt:      "EXPERIENCIA ENERGÍA FAMILIAR VITAL — PHN",
 
@@ -58,7 +58,7 @@ window.EXP_CONTENT = {
   backText: "← Volver al inicio",
 
   // ── BRANDING ──────────────────────────────────────────────────────────────
-  logoUrl:  "../../public/images/logos/Logo PHN.webp",
+  logoUrl:  "../../public/images/logos/Logo PHN.png",
   logoLink: "../../index.html",
   logoAlt:  "PHN — Proher Natura",
 

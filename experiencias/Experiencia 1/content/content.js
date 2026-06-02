@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CONTENIDO EDITABLE — Experiencia 1: Baja a tu Figura Vital
  * Edita este archivo para cambiar textos, precio, imagen y número de WhatsApp.
  * Sube tus imágenes a la carpeta  Experiencia 1/content/images/
@@ -27,7 +27,7 @@ window.EXP1_CONTENT = {
 
     // Ruta relativa desde compra.html hasta la imagen principal del producto.
     // Sube tu imagen a  Experiencia 1/content/images/  y cambia el nombre aquí.
-    imageUrl: "content/images/producto.webp",
+    imageUrl: "../../public/images/experiencias/Experiencia 1/imagen.webp",
     imageFallback: "../../imagen.webp",   // se usa si imageUrl no existe
     imageAlt: "Mi gran aventura — PHN",
 
@@ -66,7 +66,7 @@ window.EXP1_CONTENT = {
   backText: "← Volver al inicio",
 
   // ── BRANDING ──────────────────────────────────────────────────────────────
-  logoUrl:  "../../public/images/logos/Logo PHN.webp",
+  logoUrl:  "../../public/images/logos/Logo PHN.png",
   logoLink: "../../index.html",
   logoAlt:  "PHN — Proher Natura",
 

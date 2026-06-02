@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CONTENIDO EDITABLE — Experiencia 3: EXPERIENCIA ARMONIZACIÓN FACIAL
  * Edita este archivo para cambiar textos, precio, imagen y número de WhatsApp.
  */
@@ -21,7 +21,7 @@ window.EXP_CONTENT = {
     price:    "",           // ej. "$1,500 MXN" — deja vacío para ocultar
     badge:    "15 días",
 
-    imageUrl:      "../Experiencia 1/content/images/producto.webp",
+    imageUrl:      "../../public/images/experiencias/Experiencia 1/imagen.webp",
     imageFallback: "../../imagen.webp",
     imageAlt:      "EXPERIENCIA ARMONIZACIÓN FACIAL — PHN",
 
@@ -58,7 +58,7 @@ window.EXP_CONTENT = {
   backText: "← Volver al inicio",
 
   // ── BRANDING ──────────────────────────────────────────────────────────────
-  logoUrl:  "../../public/images/logos/Logo PHN.webp",
+  logoUrl:  "../../public/images/logos/Logo PHN.png",
   logoLink: "../../index.html",
   logoAlt:  "PHN — Proher Natura",
 

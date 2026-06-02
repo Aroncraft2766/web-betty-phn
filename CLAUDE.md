@@ -145,7 +145,7 @@ experiences: {
 
 ```js
 testimonials: {
-  avatarUrl: "public/images/logos/Logo PHN.webp",  // avatar compartido
+  avatarUrl: "public/images/logos/Logo PHN.png",  // avatar compartido
   items: [
     { text: "Texto del testimonio.", author: "Nombre Apellido" },
   ],
@@ -156,7 +156,7 @@ testimonials: {
 
 ```js
 navbar: {
-  logoUrl:  "public/images/logos/Logo PHN.webp",
+  logoUrl:  "public/images/logos/Logo PHN.png",
   logoLink: "index.html",
   links: [
     { text: "Inicio",              href: "index.html" },
@@ -306,7 +306,7 @@ Todos los assets del sitio viven bajo `public/` o en las carpetas raíz `animaci
 
 | Asset | Ruta desde raíz del proyecto | Prefijo desde `experiencias/Experiencia X/` |
 |---|---|---|
-| Logo | `public/images/logos/Logo PHN.webp` | `../../public/images/logos/Logo PHN.webp` |
+| Logo | `public/images/logos/Logo PHN.png` | `../../public/images/logos/Logo PHN.png` |
 | Bot Meredith | `public/images/Bot.png` | (cargado via ROOT en meredith-widget.js) |
 | Hero imagen | `public/images/imagen2.png` | — |
 | Reseñas | `public/images/reseñas/reseña1.webp` | — |

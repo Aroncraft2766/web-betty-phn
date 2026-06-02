@@ -1,4 +1,4 @@
-﻿/**
+/**
  * CONTENIDO EDITABLE — Experiencia 5: EXPERIENCIA HÍGADO Y PÁNCREAS VITAL
  * Edita este archivo para cambiar textos, precio, imagen y número de WhatsApp.
  */
@@ -21,7 +21,7 @@ window.EXP_CONTENT = {
     price:    "$1,000",           // ej. "$1,500 MXN" — deja vacío para ocultar
     badge:    "3 meses",
 
-    imageUrl:      "../Experiencia 1/content/images/producto.webp",
+    imageUrl:      "../../public/images/experiencias/Experiencia 1/imagen.webp",
     imageFallback: "../../Higado y pancreas.webp",
     imageAlt:      "EXPERIENCIA HÍGADO Y PÁNCREAS VITAL — PHN",
 
@@ -59,7 +59,7 @@ window.EXP_CONTENT = {
   backText: "← Volver al inicio",
 
   // ── BRANDING ──────────────────────────────────────────────────────────────
-  logoUrl:  "../../public/images/logos/Logo PHN.webp",
+  logoUrl:  "../../public/images/logos/Logo PHN.png",
   logoLink: "../../index.html",
   logoAlt:  "PHN — Proher Natura",
 

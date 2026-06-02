@@ -1,4 +1,4 @@
-﻿/**
+/**
  * SITE_CONTENT — fuente única de verdad para todo el contenido editable.
  * Edita este archivo para cambiar textos, imágenes, links y fechas.
  * Consulta CLAUDE.md para saber exactamente qué campo tocar en cada caso.
@@ -42,7 +42,7 @@ window.SITE_CONTENT = {
   // ─── TESTIMONIOS ─────────────────────────────────────────────────────────
   testimonials: {
     heading:   "Testimonios",
-    avatarUrl: "public/images/logos/Logo PHN.webp",
+    avatarUrl: "public/images/logos/Logo PHN.png",
     items: [
       {
         text:   "Me encuentro en recomposición corporal y estoy fascinada con la energía que he sentido, me encanta la variedad de opciones en el menú y me han gustado mucho los cambios que ha tenido el reto.",
@@ -410,11 +410,11 @@ window.SITE_CONTENT_EN = {
   meta: {
     title: "Betty González PHN",
     description: "PHN natural nutrition experiences. Transform your health and wellbeing naturally with Betty González.",
-    faviconUrl: "public/images/logos/Logo PHN.webp",
+    faviconUrl: "public/images/logos/Logo PHN.png",
   },
 
   navbar: {
-    logoUrl:   "public/images/logos/Logo PHN.webp",
+    logoUrl:   "public/images/logos/Logo PHN.png",
     logoLink:  "",
     links: [
       { text: "Home",             href: "index.html" },
@@ -437,7 +437,7 @@ window.SITE_CONTENT_EN = {
 
   testimonials: {
     heading:   "Testimonials",
-    avatarUrl: "public/images/logos/Logo PHN.webp",
+    avatarUrl: "public/images/logos/Logo PHN.png",
     items: [
       {
         text:   "I am in body recomposition and I am fascinated by the energy I have felt, I love the variety of menu options and I have really liked the changes in the program.",
