@@ -243,3 +243,54 @@
     initPHNMobileSlider();
   }
 })();
+
+/* ── PHN: loop de los últimos 3s en cápsulas 2 y 3 ───────────────────────────
+   Las cápsulas 2 y 3 se reproducen completas una vez (0–14s) y luego repiten
+   SOLO los últimos 3s (≈11–14s), sin reiniciar al principio ni mostrar el
+   fotograma negro final. La cápsula 1 conserva su loop nativo completo.
+   Se identifican por la URL de Cloudinary (capsula_2_ / capsula_3_). */
+(function(){
+  var TAIL  = 3;     /* segundos finales que se repiten */
+  var GUARD = 0.15;  /* margen antes del final real para evitar el frame negro */
+
+  function videoSrc(v){
+    if(v.currentSrc) return v.currentSrc;
+    var s = v.querySelector('source');
+    return (s && s.src) || '';
+  }
+  function isTailVideo(v){ return /capsula_2_|capsula_3_/.test(videoSrc(v)); }
+
+  function setup(v){
+    if(v.__phnTailLoop) return;
+    v.__phnTailLoop = true;
+    v.loop = false;                       /* desactiva el loop nativo */
+    function tailPoint(){
+      var d = v.duration;
+      if(!isFinite(d) || d <= TAIL) return 0;
+      return d - TAIL;                    /* salto a (duración − 3) */
+    }
+    function jump(){
+      try { v.currentTime = tailPoint(); } catch(e){}
+      var p = v.play(); if(p) p.catch(function(){});
+    }
+    v.addEventListener('timeupdate', function(){
+      var d = v.duration;
+      if(isFinite(d) && d > 0 && v.currentTime >= d - GUARD){ jump(); }
+    });
+    v.addEventListener('ended', jump);     /* respaldo si 'timeupdate' no alcanza */
+  }
+
+  function init(){
+    Array.prototype.forEach.call(document.querySelectorAll('video'), function(v){
+      if(isTailVideo(v)){ setup(v); }
+      else {
+        /* la URL puede no estar resuelta aún en currentSrc al cargar */
+        v.addEventListener('loadedmetadata', function(){ if(isTailVideo(v)) setup(v); });
+      }
+    });
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();

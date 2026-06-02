@@ -24,7 +24,7 @@ Cada página de compra tiene su propio `experiencias/Experiencia X/content/conte
 | `CLAUDE.md` | Esta guía | ✅ **Actualizar siempre** que se agregue un archivo, cambie una regla de edición o se introduzca un nuevo patrón |
 | `compra/js/video-content.js` | Textos de los 3 videos en todas las páginas de compra (ES + EN) | ✅ Sí |
 | `compra/js/translations.js` | Traducciones al inglés de todas las páginas de compra (título, descripción, lista) | ✅ Sí |
-| `compra/js/scripts.js` | Lógica compartida: slider móvil, botón traducir, orden del carrito | ⚠️ Solo al final del archivo |
+| `compra/js/scripts.js` | Lógica compartida: slider móvil, botón traducir, orden del carrito, loop de últimos 3s en cápsulas 2 y 3 | ⚠️ Solo al final del archivo |
 | `compra/js/footer.js` | Footer completo compartido. Se carga con `<script data-root="../../">` en compra.html y `<script data-root="">` en raíz | ✅ Sí — editar datos directamente en el objeto `data` |
 | `catalogo.html` | Landing de catálogo con 2 banners: Productos y Cosméticos | ✅ Sí — editar banners, títulos |
 | `cosmeticos.html` | Página de productos cosméticos (VR-4 GEL, DB-6 CREMA, COLAGENO 80/20, COLAGENO 50/50, MASCARILLA) | ⚠️ Misma estructura que `productos.html` |
@@ -237,17 +237,15 @@ products: [
 
 ### Cambiar la imagen del producto
 
-Todas las experiencias (2–15) usan la imagen de Experiencia 1:
+Las 13 experiencias usan la MISMA imagen, alojada en `public/`:
 
 ```js
-imageUrl: "../Experiencia 1/content/images/producto.webp",
+imageUrl: "../../public/images/experiencias/Experiencia 1/imagen.webp",
 ```
 
-Experiencia 1 usa su propia imagen:
-
-```js
-imageUrl: "content/images/producto.webp",
-```
+- El prefijo `../../` sube dos niveles desde `experiencias/Experiencia X/` al raíz.
+- Esta ruta también está hardcodeada como `src` inicial del `<img id="productImg">` en cada `compra.html` (≈línea 213), además de leerse por JS desde `product.imageUrl`. Si cambias la imagen, actualiza ambos lugares para evitar un 404 inicial.
+- Ya no se usan los `producto.webp` locales de `experiencias/Experiencia X/content/images/` (fueron eliminados). Las carpetas `content/images/` solo conservan `banner.webp`.
 
 ---
 
@@ -320,8 +318,22 @@ Todos los assets del sitio viven bajo `public/` o en las carpetas raíz `animaci
 | Galería producto | `public/images/productos/gallery/<clave>/` | Prefijo en gallery-data.js: `../public/images/productos/gallery/` |
 | Imágenes experiencias | `public/images/experiencias/Experiencia X/` | `../../public/images/experiencias/Experiencia X/` |
 | Libros/catálogos | `public/libros/<nombre>/pages/01.webp` | — |
-| Videos cápsulas | `animacion/capsula 1.mp4`, `capsula 2.mp4`, `capsula 3.mp4` | `../../animacion/capsula X.mp4` |
+| Videos cápsulas | **Cloudinary** (no locales — `/animacion/` está en `.gitignore` y no se despliega) | Hardcodeadas en los 13 `compra.html` (6 refs c/u: bloque desktop `#vid1/#vid2/#vid3` + bloque slider móvil) |
 | Imagen fallback | `imagen.webp` (raíz) | `../../imagen.webp` — fallback de error en compra.html |
+
+### Videos de cápsula (Cloudinary)
+
+Los 3 videos de cápsula de las páginas de compra **ya no son locales**: `/animacion/` está en `.gitignore` y no se despliega en Vercel (daba 404 en producción). Están hardcodeados en los 13 `compra.html`, 6 referencias por archivo (bloque desktop `#vid1/#vid2/#vid3` + bloque slider móvil):
+
+| Cápsula | URL Cloudinary |
+|---|---|
+| 1 | `https://res.cloudinary.com/dfi2ugopz/video/upload/v1776116513/capsula_1_isy7hg.mp4` |
+| 2 | `https://res.cloudinary.com/dfi2ugopz/video/upload/eo_14.0/v1776116517/capsula_2_ssa3se.mp4` |
+| 3 | `https://res.cloudinary.com/dfi2ugopz/video/upload/eo_14.0/v1776116519/capsula_3_vjraln.mp4` |
+
+- `eo_14.0` (end-offset 14.0s) en cápsulas 2 y 3 recorta el último ~1s para eliminar el fotograma negro final. La cápsula 1 va **sin** recorte.
+- **Loop de últimos 3s (cápsulas 2 y 3):** lógica al final de `compra/js/scripts.js`. Reproducen el video completo una vez (0–14s) y luego repiten SOLO los últimos 3s (≈11–14s), sin reiniciar al principio. Se identifican por la URL (`capsula_2_` / `capsula_3_`), se les pone `loop=false` y vía `timeupdate`/`ended` saltan a `(duración − 3)` al acercarse al final. La cápsula 1 conserva su loop nativo completo (atributo `loop` en el HTML).
+- Para volver a editar las URLs en bulk usa un script PowerShell con `[System.IO.File]::ReadAllText`/`WriteAllText` y UTF8 sin BOM.
 
 ---
 
