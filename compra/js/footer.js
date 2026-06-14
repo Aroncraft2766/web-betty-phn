@@ -27,8 +27,8 @@
     credits:   'Todos los derechos reservados',
     whatsapp:  '5212241033782',
     address: [
-      'Blvd. Cuauhtémoc 1602, La Villa,',
-      '75483 Tecamachalco, Pue.',
+      'Av. Raúl Isidro Burgos 2224, Maestro Federal,',
+      '72080 Heroica Puebla de Zaragoza, Pue.',
     ],
     social: [
       { name: 'Facebook',   url: 'https://www.facebook.com/share/1Dq4X1YqxC/',                                                            color: '#1877f2', icon: 'fb' },

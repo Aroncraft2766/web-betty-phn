@@ -1194,20 +1194,20 @@
         </div>
       </div>
 
-      <!-- Mapa: Tecamachalco -->
+      <!-- Mapa: Puebla -->
       <div class="con-map-col">
         <div class="con-map-wrap">
           <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-97.73420%2C18.86811%2C-97.71420%2C18.88811&amp;layer=mapnik&amp;marker=18.87811%2C-97.72420"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-98.21611%2C19.05172%2C-98.19611%2C19.07172&amp;layer=mapnik&amp;marker=19.06172%2C-98.20611"
             allowfullscreen
             loading="lazy"
-            title="Ubicación Tecamachalco">
+            title="Ubicación Puebla">
           </iframe>
         </div>
         <div class="con-map-info">
-          <h3>Tecamachalco, Pue.</h3>
-          <p>Blvd. Cuauhtémoc 1602, La Villa, 75483 Tecamachalco, Pue.</p>
-          <a href="https://maps.app.goo.gl/tAyZhbaHo3TyA5pUA" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#27ae60;font-size:0.88em;font-weight:600;text-decoration:none;">
+          <h3>Heroica Puebla de Zaragoza, Pue.</h3>
+          <p>Av. Raúl Isidro Burgos 2224, Maestro Federal, 72080 Heroica Puebla de Zaragoza, Pue.</p>
+          <a href="https://maps.app.goo.gl/gFkAAUf527xbmW289" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#27ae60;font-size:0.88em;font-weight:600;text-decoration:none;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             ${e(c.ui.mapLink)}
           </a>

@@ -386,8 +386,8 @@ window.SITE_CONTENT = {
     address: {
       heading: "DIRECCIÓN",
       lines: [
-        "Blvd. Cuauhtémoc 1602, La Villa,",
-        "75483 Tecamachalco, Pue.",
+        "Av. Raúl Isidro Burgos 2224, Maestro Federal,",
+        "72080 Heroica Puebla de Zaragoza, Pue.",
       ],
     },
     whatsappFloat: "5212241033782",
@@ -772,8 +772,8 @@ window.SITE_CONTENT_EN = {
     address: {
       heading: "ADDRESS",
       lines: [
-        "Blvd. Cuauhtémoc 1602, La Villa,",
-        "75483 Tecamachalco, Pue.",
+        "Av. Raúl Isidro Burgos 2224, Maestro Federal,",
+        "72080 Heroica Puebla de Zaragoza, Pue.",
       ],
     },
     whatsappFloat: "5212241033782",
