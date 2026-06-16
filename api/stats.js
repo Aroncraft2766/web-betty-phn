@@ -1,15 +1,15 @@
-// api/stats.js — Métricas agregadas para el Panel Axonia. Protegido por token.
-//   GET /api/stats?site=<id>&days=7   -> métricas de un sitio
-//   GET /api/stats?days=7             -> resumen de todos los sitios
-// Generado por Panel Axonia.
-const URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
-const TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
+// api/stats.js — Métricas estilo GA para el Panel Proher Natura. Protegido por token.
+//   GET /api/stats?site=<id>&days=7  -> métricas completas de un sitio
+//   GET /api/stats?days=7            -> resumen de todos los sitios
+// Generado por Panel Proher Natura.
+const KV_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
+const KV_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
 const READ = process.env.STATS_READ_TOKEN || '';
 
 async function pipeline(cmds) {
-  const r = await fetch(URL + '/pipeline', {
+  const r = await fetch(KV_URL + '/pipeline', {
     method: 'POST',
-    headers: { Authorization: 'Bearer ' + TOKEN, 'Content-Type': 'application/json' },
+    headers: { Authorization: 'Bearer ' + KV_TOKEN, 'Content-Type': 'application/json' },
     body: JSON.stringify(cmds),
   });
   if (!r.ok) throw new Error('kv ' + r.status);
@@ -24,14 +24,54 @@ function lastNDays(n) {
   return out;
 }
 
+// HGETALL plano [f,v,f,v] -> [{name,count}] ordenado desc.
+function hashTop(arr, limit) {
+  const out = [];
+  if (Array.isArray(arr)) {
+    for (let i = 0; i + 1 < arr.length; i += 2) out.push({ name: String(arr[i]), count: toInt(arr[i + 1]) });
+  }
+  out.sort((a, b) => b.count - a.count);
+  return limit ? out.slice(0, limit) : out;
+}
+
 async function siteStats(site, days) {
   const dk = lastNDays(days);
-  const out = await pipeline([['GET', 'v:' + site + ':total'], ...dk.map((d) => ['GET', 'v:' + site + ':d:' + d])]);
-  const total = toInt(out[0]);
-  const series = dk.map((date, i) => ({ date, count: toInt(out[i + 1]) }));
-  const today = series.length ? series[series.length - 1].count : 0;
+  const cmds = [
+    ['GET', 'v:' + site + ':total'],
+    ['GET', 'pv:' + site + ':total'],
+    ...dk.map((d) => ['GET', 'v:' + site + ':d:' + d]),
+    ...dk.map((d) => ['GET', 'pv:' + site + ':d:' + d]),
+    ['HGETALL', 'pages:' + site],
+    ['HGETALL', 'ref:' + site],
+    ['HGETALL', 'dev:' + site],
+    ['HGETALL', 'geo:' + site],
+  ];
+  const out = await pipeline(cmds);
+  let i = 0;
+  const visitsTotal = toInt(out[i++]);
+  const pvTotal = toInt(out[i++]);
+  const series = dk.map((date) => ({ date, count: toInt(out[i++]) }));
+  const pvSeries = dk.map((date) => ({ date, count: toInt(out[i++]) }));
+  const pages = hashTop(out[i++], 10);
+  const sources = hashTop(out[i++], 8);
+  const devices = hashTop(out[i++], 0);
+  const countries = hashTop(out[i++], 8);
   const sum = series.reduce((a, s) => a + s.count, 0);
-  return { site, total, today, days: series.length, sum, series };
+  return {
+    site,
+    total: visitsTotal,
+    today: series.length ? series[series.length - 1].count : 0,
+    days: series.length,
+    sum,
+    series,
+    pageviews: {
+      total: pvTotal,
+      today: pvSeries.length ? pvSeries[pvSeries.length - 1].count : 0,
+      sum: pvSeries.reduce((a, s) => a + s.count, 0),
+      series: pvSeries,
+    },
+    pages, sources, devices, countries,
+  };
 }
 
 module.exports = async function handler(req, res) {
@@ -45,7 +85,7 @@ module.exports = async function handler(req, res) {
     const p = b || (req.query && req.query.token) || '';
     if (p !== READ) return res.status(401).json({ error: 'no-autorizado' });
   }
-  if (!URL || !TOKEN) return res.status(503).json({ error: 'kv-no-configurado' });
+  if (!KV_URL || !KV_TOKEN) return res.status(503).json({ error: 'kv-no-configurado' });
   try {
     const days = Math.min(90, Math.max(1, toInt((req.query && req.query.days) || 7) || 7));
     const site = String((req.query && req.query.site) || '').toLowerCase().trim();

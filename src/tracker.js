@@ -1,10 +1,15 @@
-// tracker.js — Beacon de visita del Panel Axonia. Cuenta 1 vez por sesión.
+// tracker.js — Beacon del Panel Proher Natura. Cuenta vistas (cada carga) y
+// sesiones (1 por sesión), con página y fuente. Sin cookies de terceros.
 (function () {
   try {
     var SITE = 'web-betty-phn';
-    if (sessionStorage.getItem('axv')) return;
-    sessionStorage.setItem('axv', '1');
-    var img = new Image();
-    img.src = '/api/track?site=' + encodeURIComponent(SITE) + '&t=' + Date.now();
+    var isNew = !sessionStorage.getItem('axv');
+    if (isNew) sessionStorage.setItem('axv', '1');
+    var qs = '?site=' + encodeURIComponent(SITE)
+      + '&p=' + encodeURIComponent(location.pathname || '/')
+      + '&r=' + encodeURIComponent(document.referrer || '')
+      + (isNew ? '&n=1' : '')
+      + '&t=' + Date.now();
+    new Image().src = '/api/track' + qs;
   } catch (e) { /* sin efecto si falla */ }
 })();
